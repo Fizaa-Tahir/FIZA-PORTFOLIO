@@ -5,10 +5,10 @@
 // ---------------------------------------------------------------------------
 
 export const profile = {
-  name: "Fiza",
+  name: "Fiza Tahir",
   fullName: "Fiza Tahir",
   eyebrow: "AI ENTHUSIAST • WEB • AI MARKETING",
-  heroHeading: "Hi, I'm Fiza.",
+  heroHeading: "Hi, I'm Fiza Tahir.",
   heroStatement: ["Exploring AI.", "Building for the web.", "Learning by creating."],
   heroDescription:
     "I'm a Computer Science student passionate about Artificial Intelligence, Machine Learning, and Web Development. I enjoy experimenting with emerging AI technologies and turning ideas into practical digital experiences.",
