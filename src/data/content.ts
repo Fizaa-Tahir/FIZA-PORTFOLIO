@@ -65,6 +65,7 @@ export type Project = {
   github?: string;
   liveUrl?: string;
   liveLabel?: string;
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -103,8 +104,9 @@ export const projects: Project[] = [
     learning:
       "Got hands-on with structuring interactive front-end state (filters, cart) without a framework, which forced a clearer understanding of the DOM.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    github: "[GITHUB URL]",
-    liveUrl: "[LIVE DEMO URL]",
+    github: "https://github.com/Fizaa-Tahir/Trendnora-website",
+    liveUrl: "https://trendnora-website.vercel.app",
+    image: "/trendora-hero.jpg",
   },
   {
     id: "flyrank-marketing",
