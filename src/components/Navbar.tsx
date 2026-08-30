@@ -50,7 +50,7 @@ export function Navbar() {
           }`}
         >
           <a href="#home" className="font-display font-semibold text-sm tracking-wide text-text-primary">
-            FIZA<span className="text-accent-primary">.</span>
+            FIZA TAHIR<span className="text-accent-primary">.</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-1">
