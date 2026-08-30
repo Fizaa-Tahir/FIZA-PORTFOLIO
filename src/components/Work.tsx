@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { projects, Project } from "@/data/content";
@@ -18,6 +19,18 @@ function ProjectCard({ project }: { project: Project }) {
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="group relative rounded-3xl border border-border-pink bg-bg-secondary/50 p-7 md:p-9 transition-all duration-300 hover:border-accent-primary/50 hover:bg-bg-secondary/80"
     >
+      {project.image && (
+        <div className="relative -mx-7 -mt-7 md:-mx-9 md:-mt-9 mb-7 aspect-[16/9] overflow-hidden rounded-t-3xl">
+          <Image
+            src={project.image}
+            alt={`${project.name} preview`}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-bg-secondary/80 via-transparent to-transparent" />
+        </div>
+      )}
+
       <div className="flex items-start justify-between gap-4">
         <div>
           <span className="font-mono text-[11px] tracking-[0.16em] text-accent-secondary">
@@ -40,11 +53,21 @@ function ProjectCard({ project }: { project: Project }) {
               <Github size={18} />
             </a>
           )}
-          {project.liveUrl && (
+          {project.liveUrl && !project.liveUrl.startsWith("[") && (
             <a
-              href={project.liveUrl.startsWith("[") ? "#" : project.liveUrl}
+              href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${project.name} live demo`}
+              className="flex items-center gap-1.5 text-text-secondary hover:text-accent-secondary transition-colors"
+            >
+              <ExternalLink size={17} />
+              <span className="font-mono text-[11px] uppercase tracking-[0.08em]">Live Site</span>
+            </a>
+          )}
+          {project.liveUrl && project.liveUrl.startsWith("[") && (
+            <a
+              href="#"
               aria-label={`${project.name} live demo`}
               className="text-text-secondary hover:text-accent-secondary transition-colors"
             >
