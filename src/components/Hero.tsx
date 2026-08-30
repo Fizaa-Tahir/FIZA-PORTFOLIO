@@ -62,7 +62,7 @@ export function Hero() {
           </div>
 
           <div className="mt-10 flex items-center gap-5">
-            <a
+            
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export function Hero() {
             >
               <Github size={18} />
             </a>
-            <a
+            
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export function Hero() {
             >
               <Linkedin size={18} />
             </a>
-            <a
+            
               href={`mailto:${profile.email}`}
               aria-label="Email"
               className="text-text-secondary hover:text-accent-secondary transition-colors"
@@ -105,13 +105,19 @@ export function Hero() {
             style={{ perspective: "800px" }}
           >
             {/* glow behind */}
-            <div className="absolute -inset-6 rounded-[48%_52%_55%_45%/45%_48%_52%_55%] bg-accent-primary/25 glow-blob" />
+            <div
+              className="absolute -inset-6 bg-accent-primary/25 glow-blob"
+              style={{ borderRadius: "48% 52% 55% 45% / 45% 48% 52% 55%" }}
+            />
 
             <motion.div
               animate={{ rotateX: tilt.y, rotateY: tilt.x }}
               transition={{ type: "spring", stiffness: 120, damping: 14 }}
-              className="relative rounded-[48%_52%_55%_45%/45%_48%_52%_55%] overflow-hidden border border-border-pink-strong shadow-[0_0_60px_rgba(255,0,122,0.18)]"
-              style={{ transformStyle: "preserve-3d" }}
+              className="relative overflow-hidden border border-border-pink-strong shadow-[0_0_60px_rgba(255,0,122,0.18)]"
+              style={{
+                transformStyle: "preserve-3d",
+                borderRadius: "48% 52% 55% 45% / 45% 48% 52% 55%",
+              }}
             >
               <Image
                 src="/portrait.png"
