@@ -64,7 +64,7 @@ export function Navbar() {
             ))}
           </nav>
 
-          
+          <a
             href={profile.cv}
             target="_blank"
             rel="noopener noreferrer"
