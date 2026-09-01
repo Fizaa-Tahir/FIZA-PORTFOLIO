@@ -7,11 +7,13 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   useEffect(() => {
     const sections = nav
       .map((n) => document.querySelector(n.href))
@@ -29,6 +31,7 @@ export function Navbar() {
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
   }, []);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -46,6 +49,7 @@ export function Navbar() {
           <a href="#home" className="font-display font-semibold text-sm tracking-wide text-text-primary">
             FIZA TAHIR<span className="text-accent-primary">.</span>
           </a>
+
           <nav className="hidden md:flex items-center gap-1">
             {nav.map((item) => (
               
@@ -59,6 +63,7 @@ export function Navbar() {
               </a>
             ))}
           </nav>
+
           
             href={profile.cv}
             target="_blank"
@@ -67,6 +72,7 @@ export function Navbar() {
           >
             View CV
           </a>
+
           <button
             aria-label={open ? "Close menu" : "Open menu"}
             className="md:hidden text-text-primary p-1"
@@ -75,6 +81,7 @@ export function Navbar() {
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
+
         {open && (
           <div className="md:hidden mt-2 rounded-2xl border border-border-pink bg-bg-secondary/95 backdrop-blur-md p-4 flex flex-col gap-1">
             {nav.map((item) => (
