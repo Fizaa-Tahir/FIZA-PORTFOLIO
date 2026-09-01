@@ -15,7 +15,7 @@ export const profile = {
   email: "fizaatahir1506@gmail.com",
   github: "https://github.com/Fizaa-Tahir",
   linkedin: "https://linkedin.com/in/fizatahir",
-   cv: "/Fiza-Tahir-CV.pdf"
+  cv: "/Fiza-Tahir-CV.pdf",
   portraitAlt: "Portrait of Fiza",
 };
 
