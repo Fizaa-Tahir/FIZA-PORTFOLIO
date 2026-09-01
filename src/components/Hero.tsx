@@ -120,7 +120,7 @@ export function Hero() {
               }}
             >
               <Image
-                src="/portrait.png"
+                src="/portrait.jpg"
                 alt={profile.portraitAlt}
                 width={720}
                 height={880}
