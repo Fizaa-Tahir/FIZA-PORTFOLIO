@@ -7,7 +7,7 @@ import { Eyebrow } from "./ui/SectionHeading";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-28 md:py-40 overflow-hidden">
+    <section id="contact" className="relative py-28 md:py-40 overflow-hidden bg-bg-secondary border-t border-white/5">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-primary/15 glow-blob" />
       </div>
