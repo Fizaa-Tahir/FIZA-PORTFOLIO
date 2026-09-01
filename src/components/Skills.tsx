@@ -8,7 +8,7 @@ export function Skills() {
   const categories = Object.entries(skills);
 
   return (
-    <section id="skills" className="relative py-28 md:py-36 bg-bg-secondary/40">
+    <section id="skills" className="relative py-28 md:py-36 border-t border-white/5">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Skills" lines={["What I work with."]} />
 
