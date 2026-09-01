@@ -6,7 +6,7 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 export function About() {
   return (
-    <section id="about" className="relative py-28 md:py-36">
+    <section id="about" className="relative py-28 md:py-36 bg-bg-secondary border-t border-white/5">
       <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-[1.1fr_0.9fr] gap-16">
         <div>
           <SectionHeading eyebrow="About" lines={about.headline} />
