@@ -12,19 +12,19 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fiza — AI Enthusiast, Web & AI Marketing",
   description:
-    "Fiza is a Computer Science student exploring Artificial Intelligence, Machine Learning, and Web Development — building practical AI-powered experiences.",
+    "Computer Science student exploring AI, Machine Learning, and Web Development through hands-on projects.",
   openGraph: {
     title: "Fiza — AI Enthusiast, Web & AI Marketing",
     description:
-      "Fiza is a Computer Science student exploring Artificial Intelligence, Machine Learning, and Web Development — building practical AI-powered experiences.",
+      "Computer Science student exploring AI, Machine Learning, and Web Development through hands-on projects.",
     url: "https://fizasportfolio.vercel.app",
     siteName: "Fiza Tahir",
     images: [
       {
-        url: "/portrait.png",
+        url: "/portfolio-sc.png",
         width: 1200,
         height: 630,
-        alt: "Fiza Tahir",
+        alt: "Fiza Tahir — AI Enthusiast, Web & AI Marketing",
       },
     ],
     type: "website",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fiza — AI Enthusiast, Web & AI Marketing",
     description:
-      "Fiza is a Computer Science student exploring Artificial Intelligence, Machine Learning, and Web Development — building practical AI-powered experiences.",
-    images: ["/portrait.png"],
+      "Computer Science student exploring AI, Machine Learning, and Web Development through hands-on projects.",
+    images: ["/portfolio-sc.png"],
   },
 };
 
