@@ -85,7 +85,7 @@ export function Navbar() {
         {open && (
           <div className="md:hidden mt-2 rounded-2xl border border-border-pink bg-bg-secondary/95 backdrop-blur-md p-4 flex flex-col gap-1">
             {nav.map((item) => (
-              
+             <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
@@ -94,7 +94,7 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
-            
+             <a
               href={profile.cv}
               onClick={() => setOpen(false)}
               className="px-3 py-3 font-mono text-xs tracking-[0.12em] uppercase text-accent-secondary"
