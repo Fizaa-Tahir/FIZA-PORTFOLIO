@@ -52,7 +52,7 @@ export function Navbar() {
 
           <nav className="hidden md:flex items-center gap-1">
             {nav.map((item) => (
-              
+             <a
                 key={item.href}
                 href={item.href}
                 className={`relative px-4 py-2 font-mono text-[11px] tracking-[0.12em] uppercase transition-colors duration-200 ${
