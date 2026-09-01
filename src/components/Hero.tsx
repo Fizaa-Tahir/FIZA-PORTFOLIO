@@ -62,7 +62,7 @@ export function Hero() {
           </div>
 
           <div className="mt-10 flex items-center gap-5">
-            
+           <a
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export function Hero() {
             >
               <Github size={18} />
             </a>
-            
+            <a
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export function Hero() {
             >
               <Linkedin size={18} />
             </a>
-            
+            <a
               href={`mailto:${profile.email}`}
               aria-label="Email"
               className="text-text-secondary hover:text-accent-secondary transition-colors"
