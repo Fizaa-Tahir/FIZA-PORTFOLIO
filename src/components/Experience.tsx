@@ -6,7 +6,7 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 export function Experience() {
   return (
-    <section id="experience" className="relative py-28 md:py-36 bg-bg-secondary/40">
+    <section id="experience" className="relative py-28 md:py-36 border-t border-white/5">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Experience" lines={["Where I'm applying it."]} />
 
