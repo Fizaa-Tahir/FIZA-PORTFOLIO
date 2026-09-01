@@ -132,7 +132,7 @@ export function Work() {
   const visible = filter === "All" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="work" className="relative py-28 md:py-36">
+    <section id="work" className="relative py-28 md:py-36 bg-bg-secondary border-t border-white/5">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
           <SectionHeading eyebrow="Work" lines={["Projects, not just", "portfolio filler."]} />
@@ -154,7 +154,7 @@ export function Work() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6">
+        <div className="mt-14 grid gap-10">
           <AnimatePresence mode="popLayout">
             {visible.map((project) => (
               <ProjectCard key={project.id} project={project} />
