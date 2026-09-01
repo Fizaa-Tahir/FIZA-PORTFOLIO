@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Fiza Tahir",
     images: [
       {
-        url: "/portfolio-sc.png",
+        url: "/portfolio-sc.jpg",
         width: 1200,
         height: 630,
         alt: "Fiza Tahir — AI Enthusiast, Web & AI Marketing",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Fiza — AI Enthusiast, Web & AI Marketing",
     description:
       "Computer Science student exploring AI, Machine Learning, and Web Development through hands-on projects.",
-    images: ["/portfolio-sc.png"],
+    images: ["/portfolio-sc.jpg"],
   },
 };
 
