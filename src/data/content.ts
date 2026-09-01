@@ -15,6 +15,7 @@ export const profile = {
   email: "fizaatahir1506@gmail.com",
   github: "https://github.com/Fizaa-Tahir",
   linkedin: "https://linkedin.com/in/fizatahir",
+   CV: "/Fiza-Tahir-CV.pdf"
   portraitAlt: "Portrait of Fiza",
 };
 
@@ -29,10 +30,10 @@ export const about = {
 
 export const education = {
   degree: "Bachelor of Science in Computer Science (BSCS)",
-  status: "6th Semester",
+  status: "7th Semester",
   university: "Government College Women University, Faisalabad (GCWUF)",
-  expectedGraduation: "[EXPECTED GRADUATION YEAR]",
-  cgpa: "3.54 CGPA",
+  expectedGraduation: "2027",
+  cgpa: "3.56 CGPA",
 };
 
 export const experience = {
